@@ -20,6 +20,9 @@ class HomeVC: UIViewController {
         // Assigning data, for tableView to work properly
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
+        
+        // Add header space for HomeVC
+        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x:0, y:0, width: view.bounds.width, height: 450))
     }
     
     override func viewDidLayoutSubviews() {
