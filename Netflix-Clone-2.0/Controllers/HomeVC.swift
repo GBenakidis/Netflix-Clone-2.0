@@ -2,9 +2,13 @@ import UIKit
 
 class HomeVC: UIViewController {
     private let homeFeedTable: UITableView = {
-        // Initializing table
-        let table = UITableView()
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        // Initializing table, with specification of using headers
+        // .zero, because we have already initialized it in viewDidLayoutSubviews
+        // .grouped, it will tableView this file the same as Apple uses inside Settings app
+        let table = UITableView(frame: .zero, style: .grouped)
+        
+        // Register our custom viewCell
+        table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
         return table
     }()
 
@@ -27,15 +31,29 @@ class HomeVC: UIViewController {
 
 // To keep our file clean
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 20
+    }
+    
     // Number of rows inside each section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 1
     }
     
     // Delegate method that tells that tableView which cell we are going to dequeue for each row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Hello"
+        // Proper way to write it without errors
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else{
+            return UITableViewCell()
+        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
     }
 }

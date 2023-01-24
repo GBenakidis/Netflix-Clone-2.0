@@ -16,6 +16,7 @@
 		7938EA3A297F47230036B685 /* UpcomingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA39297F47230036B685 /* UpcomingVC.swift */; };
 		7938EA3C297F47480036B685 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA3B297F47480036B685 /* SearchVC.swift */; };
 		7938EA3E297F47690036B685 /* DownloadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA3D297F47690036B685 /* DownloadsVC.swift */; };
+		7938EA472980778D0036B685 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA462980778D0036B685 /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7938EA39297F47230036B685 /* UpcomingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingVC.swift; sourceTree = "<group>"; };
 		7938EA3B297F47480036B685 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		7938EA3D297F47690036B685 /* DownloadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsVC.swift; sourceTree = "<group>"; };
+		7938EA462980778D0036B685 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		7938EA3F29800AD30036B685 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7938EA462980778D0036B685 /* CollectionViewTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				7938EA3C297F47480036B685 /* SearchVC.swift in Sources */,
 				7938EA27297F43310036B685 /* MainTabBarVC.swift in Sources */,
+				7938EA472980778D0036B685 /* CollectionViewTableViewCell.swift in Sources */,
 				7938EA38297F46EB0036B685 /* HomeVC.swift in Sources */,
 				7938EA23297F43310036B685 /* AppDelegate.swift in Sources */,
 				7938EA3E297F47690036B685 /* DownloadsVC.swift in Sources */,
