@@ -62,6 +62,11 @@
 		7938EA21297F43310036B685 /* Netflix-Clone-2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				7938EA4329800B620036B685 /* Managers */,
+				7938EA4229800B500036B685 /* Resources */,
+				7938EA4129800B090036B685 /* Models */,
+				7938EA3F29800AD30036B685 /* Views */,
+				7938EA4029800AE00036B685 /* ViewModels */,
 				7938EA36297F46A80036B685 /* Controllers */,
 				7938EA22297F43310036B685 /* AppDelegate.swift */,
 				7938EA24297F43310036B685 /* SceneDelegate.swift */,
@@ -82,6 +87,41 @@
 				7938EA3D297F47690036B685 /* DownloadsVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7938EA3F29800AD30036B685 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7938EA4029800AE00036B685 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7938EA4129800B090036B685 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7938EA4229800B500036B685 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7938EA4329800B620036B685 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
