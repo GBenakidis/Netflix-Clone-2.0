@@ -1,6 +1,8 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    let sectionTitles: [String] = ["Trending Movies", "Popular", "Trending TV", "Upcoming Movies", "Top Rated"]
+    
     private let homeFeedTable: UITableView = {
         // Initializing table, with specification of using headers
         // .zero, because we have already initialized it in viewDidLayoutSubviews
@@ -21,9 +23,25 @@ class HomeVC: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
+        configureNavbar()
+        
         // Add header space for HomeVC
-        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
+        let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
         homeFeedTable.tableHeaderView = headerView
+    }
+    
+    private func configureNavbar(){
+        // Get photo
+        var image = UIImage(named: "netflixLogo")
+        image = image?.withRenderingMode(.alwaysOriginal) // Forcing iOS system to use image as it is
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
+        
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
+            UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+        ]
+        // Make icons white
+        navigationController?.navigationBar.tintColor = .white
     }
     
     override func viewDidLayoutSubviews() {
@@ -36,7 +54,7 @@ class HomeVC: UIViewController {
 // To keep our file clean
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 20
+        return sectionTitles.count
     }
     
     // Number of rows inside each section
@@ -60,4 +78,29 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
     }
+    
+    // Labels of each section
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let header = view as? UITableViewHeaderFooterView else { return }
+        header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
+        header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
+        header.textLabel?.textColor = .white
+        // header.textLabel?.text = header.textLabel?.text?.lowercased()
+    }
+    
+    // Add title above for each section
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        // Dynamic number of sections
+        return sectionTitles[section]
+    }
+    
+    // Scroll down to hide header navigation
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // Offset of the top safe instance of the screen
+        let defaultOffset = view.safeAreaInsets.top
+        // Offset assign
+        let offset = scrollView.contentOffset.y + defaultOffset
+        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
+    }
+    
 }
