@@ -17,6 +17,7 @@
 		7938EA3C297F47480036B685 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA3B297F47480036B685 /* SearchVC.swift */; };
 		7938EA3E297F47690036B685 /* DownloadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA3D297F47690036B685 /* DownloadsVC.swift */; };
 		7938EA472980778D0036B685 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA462980778D0036B685 /* CollectionViewTableViewCell.swift */; };
+		7938EA49298081870036B685 /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA48298081870036B685 /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7938EA3B297F47480036B685 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		7938EA3D297F47690036B685 /* DownloadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsVC.swift; sourceTree = "<group>"; };
 		7938EA462980778D0036B685 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		7938EA48298081870036B685 /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7938EA462980778D0036B685 /* CollectionViewTableViewCell.swift */,
+				7938EA48298081870036B685 /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				7938EA3C297F47480036B685 /* SearchVC.swift in Sources */,
 				7938EA27297F43310036B685 /* MainTabBarVC.swift in Sources */,
 				7938EA472980778D0036B685 /* CollectionViewTableViewCell.swift in Sources */,
+				7938EA49298081870036B685 /* HeroHeaderUIView.swift in Sources */,
 				7938EA38297F46EB0036B685 /* HomeVC.swift in Sources */,
 				7938EA23297F43310036B685 /* AppDelegate.swift in Sources */,
 				7938EA3E297F47690036B685 /* DownloadsVC.swift in Sources */,
