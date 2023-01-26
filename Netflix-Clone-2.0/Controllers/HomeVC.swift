@@ -62,8 +62,14 @@ class HomeVC: UIViewController {
 //            }
 //
 //        }
-        APICaller.shared.getTrendingTvs { results in
-            //
+//        APICaller.shared.getTrendingTvs { results in
+//            //
+//        }
+//        APICaller.shared.getUpcomingMovies{ _ in
+//        }
+//        APICaller.shared.getPopular{ _ in
+//        }
+        APICaller.shared.getTopRated { _ in
         }
     }
     
