@@ -1,13 +1,13 @@
 import Foundation
 
-struct TrendingMoviesResponse: Codable {
+struct TrendingTvResponse: Codable {
     // Match the names of the attributes from JSON file
-    let results: [Movie]
+    let results: [Tv]
     
 }
 
-struct Movie: Codable {
-    // Copy (from JSON) all the attibutes that define a Movie
+struct Tv: Codable {
+    // Copy (from JSON) all the attibutes that define a Tv
     let id: Int
     let media_type: String?
     let original_name: String?
