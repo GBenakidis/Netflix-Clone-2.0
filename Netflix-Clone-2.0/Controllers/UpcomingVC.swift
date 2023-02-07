@@ -33,10 +33,10 @@ class UpcomingVC: UIViewController {
     private func fetchUpcoming() {
         APICaller.shared.getUpcomingMovies { [weak self] result in
             switch result {
-                case .success(let titles):
-                    self?.titles = titles
-                    DispatchQueue.main.async {
-                        self?.upcomingTable.reloadData()
+            case .success(let titles):
+                self?.titles = titles
+                DispatchQueue.main.async {
+                    self?.upcomingTable.reloadData()
                 }
             case .failure(let error):
                 print(error.localizedDescription)
@@ -60,4 +60,5 @@ extension UpcomingVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
+    
 }

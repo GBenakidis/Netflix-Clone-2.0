@@ -80,19 +80,19 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
             case Sections.TrendingMovies.rawValue:
                 APICaller.shared.getTrendingMovies { result in
                     switch result {
-                        case .success(let titles):
-                            cell.configure(with: titles)
-                        case .failure(let error):
-                            print(error.localizedDescription)
+                    case .success(let titles):
+                        cell.configure(with: titles)
+                    case .failure(let error):
+                        print(error.localizedDescription)
                     }
                 }
             case Sections.TrendingTv.rawValue:
                 APICaller.shared.getTrendingTvs { result in
                     switch result {
-                        case .success(let titles):
-                            cell.configure(with: titles)
-                        case .failure(let error):
-                            print(error.localizedDescription)
+                    case .success(let titles):
+                        cell.configure(with: titles)
+                    case .failure(let error):
+                        print(error.localizedDescription)
                     }
                 }
             case Sections.Popular.rawValue:
