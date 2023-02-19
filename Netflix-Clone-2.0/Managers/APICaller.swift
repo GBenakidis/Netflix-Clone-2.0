@@ -82,7 +82,6 @@ class APICaller {
             } catch { completion(.failure(APIError.failedTogetData)) }
         }
         task.resume()
-        
     }
     
 }
