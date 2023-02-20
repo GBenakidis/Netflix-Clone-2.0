@@ -27,6 +27,9 @@
 		7938EA5C2984B03C0036B685 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA5B2984B03C0036B685 /* TitleTableViewCell.swift */; };
 		7938EA5E2985434E0036B685 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938EA5D2985434E0036B685 /* TitleViewModel.swift */; };
 		79FA69572992D52200C8B2B3 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA69562992D52200C8B2B3 /* SearchResultsVC.swift */; };
+		79FA695C29A3869600C8B2B3 /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA695B29A3869600C8B2B3 /* YoutubeSearchResponse.swift */; };
+		79FA695E29A38A1800C8B2B3 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA695D29A38A1800C8B2B3 /* TitlePreviewViewController.swift */; };
+		79FA696029A38D5F00C8B2B3 /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FA695F29A38D5F00C8B2B3 /* TitlePreviewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		7938EA5B2984B03C0036B685 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		7938EA5D2985434E0036B685 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		79FA69562992D52200C8B2B3 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
+		79FA695B29A3869600C8B2B3 /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		79FA695D29A38A1800C8B2B3 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
+		79FA695F29A38D5F00C8B2B3 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +96,6 @@
 				7938EA3F29800AD30036B685 /* Views */,
 				7938EA4029800AE00036B685 /* ViewModels */,
 				7938EA36297F46A80036B685 /* Controllers */,
-				7938EA22297F43310036B685 /* AppDelegate.swift */,
-				7938EA24297F43310036B685 /* SceneDelegate.swift */,
 				7938EA2B297F43320036B685 /* Assets.xcassets */,
 				7938EA2D297F43320036B685 /* LaunchScreen.storyboard */,
 				7938EA30297F43320036B685 /* Info.plist */,
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				7938EA5D2985434E0036B685 /* TitleViewModel.swift */,
+				79FA695F29A38D5F00C8B2B3 /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				7938EA4C29826F270036B685 /* Title.swift */,
+				79FA695B29A3869600C8B2B3 /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				7938EA4E2982A8090036B685 /* Extensions.swift */,
+				7938EA22297F43310036B685 /* AppDelegate.swift */,
+				7938EA24297F43310036B685 /* SceneDelegate.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				79FA69562992D52200C8B2B3 /* SearchResultsVC.swift */,
+				79FA695D29A38A1800C8B2B3 /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 				7938EA38297F46EB0036B685 /* HomeVC.swift in Sources */,
 				7938EA23297F43310036B685 /* AppDelegate.swift in Sources */,
 				7938EA4F2982A8090036B685 /* Extensions.swift in Sources */,
+				79FA695C29A3869600C8B2B3 /* YoutubeSearchResponse.swift in Sources */,
 				7938EA3E297F47690036B685 /* DownloadsVC.swift in Sources */,
+				79FA696029A38D5F00C8B2B3 /* TitlePreviewViewModel.swift in Sources */,
 				7938EA3A297F47230036B685 /* UpcomingVC.swift in Sources */,
+				79FA695E29A38A1800C8B2B3 /* TitlePreviewViewController.swift in Sources */,
 				7938EA4D29826F270036B685 /* Title.swift in Sources */,
 				7938EA25297F43310036B685 /* SceneDelegate.swift in Sources */,
 				7938EA5E2985434E0036B685 /* TitleViewModel.swift in Sources */,
