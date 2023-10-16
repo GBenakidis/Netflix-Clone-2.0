@@ -1,7 +1,5 @@
 # Netflix Clone 2.0
 
-![Netflix Clone Banner](https://your-image-url.com/banner.png)
-
 Netflix Clone 2.0 is a sophisticated and feature-rich iOS application written in Swift, designed to replicate the popular Netflix streaming service. This project demonstrates the power of Swift in building a high-quality, responsive, and user-friendly streaming platform, complete with stunning visuals and a seamless user experience.
 
 ## Features
